@@ -4,45 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <style>
-        #testbox {
-            background-color: #ff0000;
-            margin: 20px 50px 20px 50px;
-            border-style: dashed;
-            border-width: 10px;
-            border-width: 2 px 8 px 8 px 2 px;
-            border-color: blue;
-            box-shadow: 12 px 2px 2px 12px blueviolet;
-            padding: 10px;
-            font-size: xx-large
-        }
-    </style>
-    <style>
-        #big {
-            font-size: x-large;
-            color: greenyellow;
-        }
-    </style>
-    <style>
-        body {
-            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS47fac02t97p0wd94zTsnCRqPKEiKEv0dOBA&s");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-    </style>
+    <title>Document</title>
 </head>
+<link id="style" rel="stylesheet" href="css/dark.css">
+<script src="js/scripts.js"></script>
 
 <body>
-    <marquee id="testbox">Hello!</marquee>
-    <marquee id="big">My name is Abe!</marquee>
-    <marquee id="big">I like pennies!!!111!1!</marquee>
-    <marquee><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhgLJBtJWfzG-p0dwXZw_De_RKdI9ObSdYGQ&s">
-    </marquee>
-    <marquee id="big">Isn't that so cool?</marquee>
-    <marquee><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0TKWVtmBJqUi4a2_oyMPg3_3xQFlBUwny3w&s">
-    </marquee>
+    <div id="toolbar">
+        <div id="buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#" onclick="switchmode()">Mode</a>
+        </div>
+        <a href="#" onclick="showhide()">☰</a>
+    </div>
 </body>
 
 </html>

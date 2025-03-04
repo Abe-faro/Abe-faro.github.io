@@ -1,0 +1,22 @@
+a, a:visited {
+    border: 1px solid white;
+    color: #FFF;
+    padding: 4px;
+    background-color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #ff00ff;
+}
+body {
+    background-color: #333;
+}
+
+#buttons {
+    display: none;
+}
+
+#toolbar {
+    display: flex;
+}
