@@ -36,3 +36,5 @@ function showhide() {
         toolbarbuttons.style.display = 'block';
     }
 }
+var audio = new Audio('bad-to-the-bone.mp3');
+var audio2 = new Audio('short-yippee-sound-effect-101soundboards.mp3');
