@@ -37,7 +37,6 @@ function showhide() {
     }
 }
 var audio = new Audio('bad-to-the-bone.mp3');
-var audio2 = new Audio('short-yippee-sound-effect-101soundboards.mp3');
 var playbutton = document.getElementById("play");
 var scorebox = document.getElementById("score");
 var score = 0;
@@ -49,19 +48,44 @@ setInterval(() => {
         time -= 1;
         timebox.innerHTML = "time;" + time;
     }
+    else { playbutton.style.display = 'none' }
+    if (time == 0 && score > 200) {
+        show_image()
+        time -= 1;
+
+    }
 }, 1000);
 
 function move() {
     if (time > 0) {
         let x = Math.random() * window.innerWidth;
         let y = Math.random() * window.innerHeight;
+        soundGo();
         playbutton.style.top = y + "px";
         playbutton.style.left = x + "px";
         playbutton.style.position = 'absolute';
         score += 1;
         scorebox.innerHTML = "score; " + score;
-        audio2.play()
-    }
-}
 
+
+    }
+
+}
 move();
+
+
+
+
+function show_image(src, width, height, alt) {
+    var img = document.createElement("img");
+    img.src = "/img/removebg-preview.png";
+    img.width = 4;
+    img.height = 4
+    img.alt = alt;
+    img.id = "cool"
+    document.body.appendChild(img);
+}
+function soundGo() {
+    var audio2 = new Audio('short-yippee-sound-effect-101soundboards.mp3');
+    audio2.play();
+}
